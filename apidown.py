@@ -31,7 +31,8 @@ def preprocess_mako(text):
 
 lookup = TemplateLookup(
     directories=['templates'],
-    preprocessor=preprocess_mako
+    preprocessor=preprocess_mako,
+    strict_undefined=True
 )
 
 a_ = None  # prevent NameError
@@ -227,6 +228,21 @@ class ApiDown(object):
         """
         return '\n'.join('> ' + line for line in text.splitlines())
 
+    @staticmethod
+    def indent(text, columns=2):
+        """
+        Turn a block of text into a blockquote.
+        """
+        return '\n'.join(' ' * columns + line for line in text.splitlines())
+
+    @staticmethod
+    def listitem(text, bullet='*'):
+        """
+        Turn a block of text into a list-item.
+        """
+        return bullet + ' ' + text.replace('\n', '\n  ')
+
+
 a_ = ApiDown()
 
 def process(f):
@@ -235,7 +251,8 @@ def process(f):
     """
     t = Template(
         filename=f,
-        preprocessor=preprocess_mako
+        preprocessor=preprocess_mako,
+        strict_undefined=True
     )
     print(t.render(a_=a_))
 
