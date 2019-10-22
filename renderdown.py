@@ -264,7 +264,7 @@ class DocManager(object):
         return re.sub(r'(\n  ){3,}', r'\n  \n  ', li)
 
 
-def main(args):
+def renderdown(args):
     multifile = (args.outdir is not None)
     kwargs = {}
     dirs = []
@@ -303,7 +303,7 @@ def main(args):
                 print('{}\t{}\t{}'.format(anchor, page, name))
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     parser = argparse.ArgumentParser(
         description='Generate Markdown from templates.'
@@ -333,4 +333,7 @@ if __name__ == '__main__':
     if not (args.template or args.module):
         raise RenderDownError('Either --template or --module must be specified.')
 
-    main(args)
+    renderdown(args)
+
+if __name__ == '__main__':
+    main()
