@@ -75,6 +75,11 @@ can be reconfigured and specialized for individual projects.
 
 MIT; see [LICENSE](LICENSE) for more information.
 
+## Project History
+
+This project was created by Michael Wayne Goodman (@goodmami) and is now owned
+and maintained by Jeff Hung (@jeffhung).
+
 ## Links
 
 - [Mako](http://makotemplates.org/) - templating engine
