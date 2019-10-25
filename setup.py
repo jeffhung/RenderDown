@@ -9,10 +9,10 @@ setup(
         'console_scripts': [ 'renderdown=renderdown:main' ],
     },
     install_requires = [ 'mako' ],
-    author           = 'Michael Wayne Goodman',
-    author_email     = 'goodman.m.w@gmail.com',
+    author           = 'Jeff Hung',
+    author_email     = 'jeff.cc.hung@gmail.com',
     description      = 'Generate Markdown text from templates.',
-    url              = 'https://github.com/goodmami/RenderDown',
+    url              = 'https://github.com/jeffhung/RenderDown',
     license          = 'MIT',
     classifiers      = [
         'Environment :: Console',
