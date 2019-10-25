@@ -77,8 +77,9 @@ MIT; see [LICENSE](LICENSE) for more information.
 
 ## Project History
 
-This project was created by Michael Wayne Goodman (@goodmami) and is now owned
-and maintained by Jeff Hung (@jeffhung).
+This project was created by Michael Wayne Goodman
+([@goodmami](https://github.com/goodmami)) and is now owned and maintained by
+Jeff Hung ([@jeffhung](https://github.com/jeffhung)).
 
 ## Links
 
