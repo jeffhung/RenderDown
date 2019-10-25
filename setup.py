@@ -9,6 +9,8 @@ setup(
         'console_scripts': [ 'renderdown=renderdown:main' ],
     },
     install_requires = [ 'mako' ],
+    setup_requires   = [ 'pytest-runner' ],
+    tests_require    = [ 'pytest' ],
     author           = 'Jeff Hung',
     author_email     = 'jeff.cc.hung@gmail.com',
     description      = 'Generate Markdown text from templates.',

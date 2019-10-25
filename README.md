@@ -71,6 +71,16 @@ can be reconfigured and specialized for individual projects.
 - Python 3.3+
 - [Mako][]
 
+## How to Test
+
+Run the following command to test:
+
+```console
+$ pip install -r requirements.txt   # install dependencies
+$ pip install -e .                  # to import in tests
+$ python setup.py test              # run the test cases
+```
+
 ## License
 
 MIT; see [LICENSE](LICENSE) for more information.
