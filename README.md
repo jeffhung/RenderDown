@@ -1,5 +1,7 @@
 # RenderDown
 
+[![Build Status](https://travis-ci.com/jeffhung/RenderDown.svg?branch=master)](https://travis-ci.com/jeffhung/RenderDown)
+
 Generate Markdown text from templates; that is, the result of
 rendering is Markdown text, not HTML. This is useful for
 generating documents published on a Markdown platform like

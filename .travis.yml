@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+  - "3.7"
+before_install:
+  - python --version
+  - pip install -r requirements.txt  # install dependencies
+install:
+  - pip install -e .                 # to import in tests
+script: pytest                       # run the test cases
+
