@@ -7,7 +7,7 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 
 setup(
     name             = 'renderdown',
-    version          = '0.1.0',
+    version          = '0.2.0',
     py_modules       = [ 'renderdown' ],
     entry_points     = {
         'console_scripts': [ 'renderdown=renderdown:main' ],
