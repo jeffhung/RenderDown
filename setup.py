@@ -1,6 +1,10 @@
 from setuptools import setup, find_packages
 import os
 
+this_directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory, 'README.md')) as f:
+    long_description = f.read()
+
 setup(
     name             = 'renderdown',
     version          = '0.1.0',
@@ -14,6 +18,8 @@ setup(
     author           = 'Jeff Hung',
     author_email     = 'jeff.cc.hung@gmail.com',
     description      = 'Generate Markdown text from templates.',
+    long_description = long_description,
+    long_description_content_type = 'text/markdown',
     url              = 'https://github.com/jeffhung/RenderDown',
     license          = 'MIT',
     classifiers      = [
